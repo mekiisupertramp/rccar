@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/connexionBL"
+        android:title="Connexion"
+        android:orderInCategory="1"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/deconnexionBL"
+        android:title="Déconnexion"
+        android:orderInCategory="1"
+        app:showAsAction="never"/>
+
+
+
+    <item
+        android:id="@+id/sensibilite"
+        android:title="Sensibilité"
+        android:visible="true"
+        android:menuCategory="container"
+        android:enabled="true"
+        android:orderInCategory="1"/>
+
+    <group
+        android:id="@+id/groupeSensi"
+        android:title="Sensibilité"
+        android:visible="false"
+        android:orderInCategory="4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/sensiHard"
+            android:title="    Hard"/>
+        <item
+            android:id="@+id/sensiMedium"
+            android:title="    Medium"
+            android:checked="true"/>
+        <item
+            android:id="@+id/sensiSoft"
+            android:title="    Soft"/>
+        </group>
+
+
+</menu>

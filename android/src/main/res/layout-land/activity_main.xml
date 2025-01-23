@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a5fdff5b">
+
+    <Button
+        android:id="@+id/btnDrive"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="Drive"
+        android:textSize="40dp"
+        android:layout_marginEnd="23dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/roundedbutton"/>
+
+    <ImageView
+        android:id="@+id/imvPokeball"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="340px"
+        android:layout_marginLeft="350px"/>
+
+    <TextView
+        android:id="@+id/mytextView"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:hint="reception servo"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/btnDrive"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:hint="vitesse"
+        android:textSize="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/mytextView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:hint="reception mot"
+        android:textSize="40dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="30dp" />
+
+
+</RelativeLayout>
